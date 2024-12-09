@@ -96,12 +96,12 @@ const Survey = ({
 
   const handlePostRequest = async (option) => {
     if (questionId === 1 && option === "No") {
-      setQuestionId(7);
+      setQuestionId(5);
       return;
     }
     setQuizData([...quizData, { ...data, selectedOption: option }]);
 
-    if (questionId === 6) {
+    if (questionId === 4) {
       // no of questions
       setQuestionId(questionId + 1);
       return;
@@ -109,8 +109,8 @@ const Survey = ({
 
     try {
       const res = await fetch(
-        "https://hongs-hindi.interactivedemos.io/api/next_question",
-        // "http://192.168.1.9:8701/api/next_question",
+        // "https://hongs-hindi.interactivedemos.io/api/next_question",
+        "http://192.168.1.3:8701/api/next_question",
 
         {
           method: "POST",
@@ -151,10 +151,10 @@ const Survey = ({
         </div>
 
         <div className="flex flex-col items-center gap-y-7  w-full ">
-          <ProgressBar progress={(questionId / 6) * 100} />
+          <ProgressBar progress={(questionId / 4) * 100} />
 
           <span className=" h-6   px-3 py-0.5  text-white rounded-[26px] bg-white/30  font-poppins text-sm font-medium leading-[19.6px]">
-            {questionId > 6 ? 6 : questionId} of 6
+            {questionId > 4 ? 4 : questionId} of 4
           </span>
         </div>
       </div>

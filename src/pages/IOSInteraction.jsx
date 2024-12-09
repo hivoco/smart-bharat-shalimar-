@@ -136,7 +136,7 @@ function IOSInteraction({ platform }) {
     try {
       let response = await fetch(
         // "http://192.168.186.175:8701/api/interactivedemos/process",
-        "https://hongs-hindi.interactivedemos.io/api/interactivedemos/process",
+        "https://api.smartbharat.shalimarpaintsai.in/api/interactivedemos/process",
         {
           method: "POST",
           headers: {
@@ -199,7 +199,7 @@ function IOSInteraction({ platform }) {
   };
 
   useEffect(() => {
-    if (questionId === 7) {
+    if (questionId === 5) {
       sendTextToBackend(speechText);
     }
   }, [questionId]);
@@ -208,7 +208,7 @@ function IOSInteraction({ platform }) {
     return <SelectLanguage language={language} setLanguage={setLanguage} />;
   }
 
-  if (language && questionId <= 6) {
+  if (language && questionId <= 4) {
     return (
       <Survey
         quizData={quizData}

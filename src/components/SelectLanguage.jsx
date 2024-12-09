@@ -4,12 +4,12 @@ function SelectLanguage({ setLanguage, language }) {
   const languages = [
     { icon: "/svgs/english.svg", name: "English" },
     { icon: "/svgs/hindi.svg", name: "Hindi" },
-    { icon: "/svgs/tamil.svg", name: "Tamil" },
-    { icon: "/svgs/marathi.svg", name: "Marathi" },
-    { icon: "/svgs/bengali.svg", name: "Bengali" },
-    { icon: "/svgs/kannada.svg", name: "Kannada" },
-    { icon: "/svgs/telugu.svg", name: "Telugu" },
-    { icon: "/svgs/malayalam.svg", name: "Malayalam" },
+    // { icon: "/svgs/tamil.svg", name: "Tamil" },
+    // { icon: "/svgs/marathi.svg", name: "Marathi" },
+    // { icon: "/svgs/bengali.svg", name: "Bengali" },
+    // { icon: "/svgs/kannada.svg", name: "Kannada" },
+    // { icon: "/svgs/telugu.svg", name: "Telugu" },
+    // { icon: "/svgs/malayalam.svg", name: "Malayalam" },
   ];
 
   const languagesUI = languages.map((lang, index) => {
