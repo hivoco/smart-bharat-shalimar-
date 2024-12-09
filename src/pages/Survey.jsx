@@ -110,7 +110,7 @@ const Survey = ({
     try {
       const res = await fetch(
         // "https://hongs-hindi.interactivedemos.io/api/next_question",
-        "https://hongs-hindi.interactivedemos.io/api/next_question",
+        "https://api.smartbharat.shalimarpaintsai.in/api/next_question",
 
         {
           method: "POST",
